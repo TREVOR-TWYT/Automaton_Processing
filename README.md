@@ -59,7 +59,7 @@ L'application permet de construire, visualiser et transformer des automates fini
 ## Architecture
 
 ```
-inf3421-app/
+Automaton_Processing/
 ├── backend/                        # API REST — Python / Flask
 │   ├── app.py                      # Point d'entrée Flask + CORS
 │   ├── requirements.txt
@@ -132,8 +132,8 @@ inf3421-app/
 ### 1. Cloner / extraire le projet
 
 ```bash
-unzip inf3421-app.zip
-cd inf3421-app
+unzip Automaton_Processing.zip
+cd Automaton_Processing
 ```
 
 ### 2. Backend Flask
