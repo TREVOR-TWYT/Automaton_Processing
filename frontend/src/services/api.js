@@ -45,3 +45,26 @@ export const solveGauss = (variables, equations) =>
 
 export const systemFromAutomate = (automate) =>
   api.post('/equations/from-automate', { automate }).then(r => r.data);
+
+export const statesInfo = (automate) =>
+  api.post('/automate/states-info', { automate }).then(r => r.data);
+export const canonicalize = (automate) =>
+  api.post('/automate/canonicalize', { automate }).then(r => r.data);
+export const toNfa = (automate) =>
+  api.post('/automate/to-nfa', { automate }).then(r => r.data);
+export const toEnfa = (automate) =>
+  api.post('/automate/to-enfa', { automate }).then(r => r.data);
+export const automateUnion = (a1, a2) =>
+  api.post('/automate/union', { automate1: a1, automate2: a2 }).then(r => r.data);
+export const automateIntersection = (a1, a2) =>
+  api.post('/automate/intersection', { automate1: a1, automate2: a2 }).then(r => r.data);
+export const automateComplement = (automate) =>
+  api.post('/automate/complement', { automate }).then(r => r.data);
+export const automateConcatenation = (a1, a2) =>
+  api.post('/automate/concatenation', { automate1: a1, automate2: a2 }).then(r => r.data);
+export const automateKleeneStar = (automate) =>
+  api.post('/automate/kleene-star', { automate }).then(r => r.data);
+export const regexGlushkov = (regex, alphabet) =>
+  api.post('/regex/glushkov', { regex, alphabet }).then(r => r.data);
+export const regexCompare = (regex, alphabet) =>
+  api.post('/regex/compare', { regex, alphabet }).then(r => r.data);
