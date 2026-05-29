@@ -337,7 +337,7 @@ Exemple : `(a|b)*abb` — tous les mots sur {a,b} se terminant par `abb`.
 
 ---
 
-## Auteur
+## Trévor Tchana
 
 Projet réalisé dans le cadre du cours **INF3421 — Langages Formels & Compilation**  
 Département d'Informatique, Faculté des Sciences  
